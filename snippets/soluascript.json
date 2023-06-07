@@ -1,0 +1,50 @@
+{
+    "Activate AI": {
+        "prefix": "activateAI",
+        "body": [
+            "-- Activate AI",
+            "ACTIVATE_AI(\"${1:path_to_exe}\") ENTER"
+        ],
+        "description": "Activate AI"
+    },
+    "Train AI": {
+        "prefix": "trainAI",
+        "body": [
+            "-- Train AI",
+            "TRAIN_AI(\"${1:path_to_txt}\") ENTER"
+        ],
+        "description": "Train AI"
+    },
+    "Print": {
+        "prefix": "print",
+        "body": [
+            "-- Print",
+            "PRINT"
+        ],
+        "description": "Print"
+    },
+    "Another Logic": {
+        "prefix": "anotherLogic",
+        "body": [
+            "-- Another Logic",
+            "ANOTHER_LOGIC(\"${1:some_logic}\")"
+        ],
+        "description": "Another Logic"
+    },
+    "Write in JavaScript": {
+        "prefix": "writeIn",
+        "body": [
+            "-- Write in JavaScript",
+            "writeIn(\"JavaScript\") ENTER"
+        ],
+        "description": "Write in JavaScript"
+    },
+    "Write in SoluaScript": {
+        "prefix": "writeOff",
+        "body": [
+            "-- Write in SoluaScript",
+            "writeIn(\"off\") ENTER"
+        ],
+        "description": "Write in SoluaScript"
+    }
+}

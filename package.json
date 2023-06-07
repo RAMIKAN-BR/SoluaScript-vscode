@@ -1,0 +1,47 @@
+{
+  "name": "soluascript-extension",
+  "displayName": "SoluaScript",
+  "description": "SoluaScript is a scripting language designed for easy training of Artificial Intelligences on personal computers, using just a few commands. It leverages integration with GraalVM-CE-22.3.2 to incorporate JavaScript code within the language. SoluaScript itself is implemented in Java. We plan to publish the project on GitHub soon and welcome contributions from anyone interested. Visit our GitHub repository at: https://github.com/RAMIKAN-BR.",
+  "version": "0.0.1",
+  "publisher": "Júlio César - Ramikan-BR",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "soluascript",
+        "aliases": ["Soluascript", "ssai"],
+        "extensions": [".ssai"],
+        "configuration": "C:/antlr4/Script/soluascript-extension/soluascript-extension--script/language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "SoluaScript",
+        "scopeName": "source.soluascript",
+        "path": "C:/antlr4/Script/soluascript-extension/soluascript-extension--script/syntaxes/soluascript.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "SoluaScript",
+        "path": "C:/antlr4/Script/soluascript-extension/soluascript-extension--script/snippets/soluascript.json"
+      }
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/RAMIKAN-BR/SoluaScript-vscode"
+    }
+  },
+  "dependencies": {
+    "graalvm-ce-22.3.2": "file:C:/antlr4/Script/graalvm",
+    "antlr4ts": "^0.5.0-alpha.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5"
+  }
+}

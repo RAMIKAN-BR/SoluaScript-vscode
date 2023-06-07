@@ -1,0 +1,57 @@
+{
+  "name": "SoluaScript",
+  "scopeName": "source.ssai",
+  "fileTypes": ["SoluaScript"],
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#commands"
+    },
+    {
+      "include": "#strings"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-dash",
+          "match": "--.*"
+        }
+      ]
+    },
+    "commands": {
+      "patterns": [
+        {
+          "name": "keyword",
+          "match": "\\b(ACTIVATE_AI|TRAIN_AI|PRINT|ANOTHER_LOGIC|writeIn)\\b"
+        },
+        {
+          "name": "string",
+          "match": "\".*?\""
+        },
+        {
+          "name": "punctuation",
+          "match": "\\b(ENTER)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape",
+              "match": "\\\\[\"\\\\/bfnrt]"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
