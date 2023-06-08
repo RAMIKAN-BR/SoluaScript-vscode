@@ -26,23 +26,18 @@ In this initial version, the language has a limited set of commands, which facil
 ### 0.0.1
 In this first version, the available commands are:
 
-ATIVAR_IA("path_to_IA_executable.exe") ENTER
-TREINAR_IA("path_to_book.txt") ENTER
-IMPRIMIR
-OUTRA_LOGICA("Some logic")
+ACTIVATE_AI("path_to_IA_executable.exe") ENTER TRAIN_AI("path_to_book.txt") ENTER PRINT ANOTHER_LOGIC("Some logic")
 
 Within the IDE, you can enter the commands as follows:
 
-ATIVAR_IA("path_to_IA_executable/ChatGPT3.5.exe") ENTER
-TREINAR_IA("path_to_book_extension/Learn_Python_from_Zero_to_Advanced.txt") ENTER
+ACTIVATE_AI("path_to_IA_executable/ChatGPT3.5.exe") ENTER TRAIN_AI("path_to_book_extension/Learn_Python_from_Zero_to_Advanced.txt") ENTER
 
-Pressing ENTER after each command will trigger the corresponding action. When activating the AI, it will wait for the next command. The TREINAR_IA command will initiate the AI training, where it will read and learn from the specified book. During training, the IMPRIMIR command will display the real-time completion percentage of the training. We have not fully implemented the logic for the IMPRIMIR command yet, but we plan to show the training progress.
+Pressing ENTER after each command will trigger the corresponding action. When activating the AI, it will wait for the next command. The TRAIN_AI command will initiate the AI training, where it will read and learn from the specified book. During training, the PRINT command will display the real-time completion percentage of the training. We have not fully implemented the logic for the PRINT command yet, but we plan to show the training progress.
 
 The SoluaScript language aims to provide lightweight, fast, and resource-efficient AIs in terms of processor, memory, and disk space. We are in the final stages of language development and plan to publish the project on GitHub soon. We welcome contributions from anyone interested.
 
-By using the command escreverEm("JavaScript"), GraalVM will recognize and automatically enable the ability to write in that language. To switch back to writing in SoluaScript, simply use the command escreverEm("off").
+By using the command writeIn("JavaScript"), GraalVM will recognize and automatically enable the ability to write in that language. To switch back to writing in SoluaScript, simply use the command writeIn("off").
 
 We are excited about the development of the SoluaScript language and hope that it can be a useful tool for training personal AIs in a simple and efficient manner when it becomes fully functional.
 
-### 0.0.2
 
